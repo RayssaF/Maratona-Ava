@@ -36,8 +36,8 @@
 .menu{
     background-color: rgba(229, 229, 229, 0.5);
     width: 100%;
-    height: 37px;
     overflow: hidden;
+    padding: 10px;
     
     
 }
@@ -46,6 +46,7 @@
     flex-direction: row;
     list-style: none;
     justify-content: center;
+    align-items: center;
     
 }
 .itens__menu {
@@ -53,12 +54,25 @@
     text-decoration: none; 
     margin-left: 12px;
     padding: 10px 7px; 
-    margin-top: 13px;
+    margin-top: 16px;
        
-    }
-.menu__btn{
-    
 }
+.menu__btn{
+    color: #ffffff;
+}
+.botao__inscricao  {
+   display: flex;
+   background-color: #E74C3C;
+   font-size: 16px;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   padding: 7px 15px;
+   justify-content: center;
+   align-items: center;
+
+}
+
 
 .text>p{
     width: 70%;
@@ -84,23 +98,41 @@ h2{
     border: 1px solid black;
     border-collapse: collapse;
     margin: 8px auto; 
+    width: 1088px;
+    height: 201px;
 }
 .table tr {
-    padding: 15px;
+    padding: 10px;
 }
 .table td{
     border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
     border-collapse: collapse;
-    padding: 15px;
+    padding: 10px;
 }
 
 .table th {
     border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
     background-color: #E5E5E5;
-    padding: 20px;
+    padding: 15px;
+}
+
+.formulario{
+    display: flex;
+    margin-bottom: 100px;
+
+}
+.formulario div{
+    width: 100%;
+    display: flex;
+    margin-bottom: 36px;
 }
 .campo{
-    width: 40%;
+    width: 100%;
+    height: 51px;
     padding: 12px;
     border: 1px #F1C40F solid;
     border-radius: 5px;
@@ -110,18 +142,25 @@ h2{
    margin: 15px 20px 20px 0;
    padding: 15px;
    display: flex;
+   flex-direction: column;
+   position: relative;
 }
 
 .label{
     color: black;
     display: flex;
-    margin-right: 10px;
+    margin: 10px 10px 10px 0;
+  
 }
 .campo__texto{
+    width: 424px;
     border: 1px #F1C40F solid;
     border-radius: 5px;
     display: flex;
     resize: none;
+    margin-bottom: 50px;
+    height:138px;
+
 }
 
 .btn__Enviar{
@@ -130,8 +169,29 @@ h2{
     border: none;
     border-radius: 5px;
     padding: 10px;
-    margin-top: 20px;
     width: 140px;
     height: 40px;
     cursor: pointer;
+    position: absolute;
+    right: 45px;
+    bottom: 0;
+    
+}
+.footer{
+    height: 302px;
+    background-color:#F1C40F;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.info__footer{
+    color: #ffffff;
+    font-size: 18px;
+
+}
+.footer_campus{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
 }
